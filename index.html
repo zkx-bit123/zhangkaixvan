@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张凯璇的个人网站</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 1em;
+            float: left;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>张凯璇的个人网站</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#education">教育经历</a></li>
+            <li><a href="#honors">曾获荣誉</a></li>
+            <li><a href="#certificates">技能证书</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>个人简介</h2>
+            <img src="assets/images/profile.jpg" alt="张凯璇" class="profile-image">
+            <p>张凯璇，硕士研究生，毕业于山东工程职业技术大学电子商务专业，管理学学士，现就读于华中农业大学，专业资源利用与植物保护，研究方向为水稻育秧纸壮秧促生效果评价。</p>
+        </section>
+
+        <section id="education">
+            <h2>教育经历</h2>
+            <ul>
+                <li>本科：山东工程职业技术大学，电子商务专业，管理学学士</li>
+                <li>硕士：华中农业大学，资源利用与植物保护专业</li>
+            </ul>
+        </section>
+
+        <section id="honors">
+            <h2>曾获荣誉</h2>
+            <ul>
+                <li>优秀班干部</li>
+                <li>三好学生</li>
+                <li>国家励志奖学金</li>
+            </ul>
+        </section>
+
+        <section id="certificates">
+            <h2>技能证书</h2>
+            <ul>
+                <li>CET4证书</li>
+                <li>阿里巴巴国际站操盘手证书</li>
+                <li>普通话二级证书</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <p>邮箱：<a href="mailto:zzzhangkaixvan@163.com">zzzhangkaixvan@163.com</a></p>
+            <p>电话：<a href="tel:15063620864">15063620864</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 张凯璇. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 可以在这里添加一些简单的交互功能，例如导航栏的滚动监听等
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.position = 'fixed';
+                nav.style.top = '0';
+                nav.style.width = '100%';
+                nav.style.zIndex = '1000';
+            } else {
+                nav.style.position = 'static';
+            }
+        });
+    </script>
+</body>
+</html>
